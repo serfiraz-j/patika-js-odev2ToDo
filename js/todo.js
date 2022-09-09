@@ -1,4 +1,4 @@
-let taskList
+let taskList = JSON.parse(localStorage.getItem('taskList'))
 let ulList = document.querySelector('#list') //tasklarımızın parent elemanı olan ul yi id si ile aldık
 
 // task üstüne tıklanmasını yakalama
