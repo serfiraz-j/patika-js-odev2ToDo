@@ -36,7 +36,7 @@ function removeTask() {
 
     taskList.splice(this.id, 1) //local storage güncellemesi için önce arraydan siliyoruz
     localStorage.setItem('taskList', JSON.stringify(taskList)) //local storage'tan da silmiş olduk
-
+    showTaskList()
 }
 
 // task listesini çağırma
